@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9e3"
+    tools:context=".sensor_gerak">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@android:dimen/app_icon_size"
+        android:text="STATUS"
+        android:textColor="@color/black"
+        android:textSize="15pt"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="SENSOR PENDETEKSI GERAK"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sensor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="180dp"
+        android:text="Sensor 1"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tombol1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/tombol2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.488"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/on2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#a0b976"
+                android:text="On"
+                android:textColor="@color/white"
+                android:textSize="12pt"></Button>
+
+            <Button
+                android:id="@+id/off2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:backgroundTint="#75ba95"
+                android:text="Off"
+                android:textColor="@color/white"
+                android:textSize="12pt"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sensor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="288dp"
+        android:text="Sensor 2"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tombol2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/tombol4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/on4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#a0b976"
+                android:text="On"
+                android:textColor="@color/white"
+                android:textSize="12pt"></Button>
+
+            <Button
+                android:id="@+id/off4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:backgroundTint="#75ba95"
+                android:text="Off"
+                android:textColor="@color/white"
+                android:textSize="12pt"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sensor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="396dp"
+        android:text="Sensor 3"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tombol3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/sensor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="504dp"
+        android:text="Sensor 4"
+        android:textColor="@color/black"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/tombol4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:id="@+id/tombol3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/on3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#a0b976"
+                android:text="On"
+                android:textColor="@color/white"
+                android:textSize="12pt"></Button>
+
+            <Button
+                android:id="@+id/off3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:backgroundTint="#75ba95"
+                android:text="Off"
+                android:textColor="@color/white"
+                android:textSize="12pt"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tombol1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.328"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/on5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#a0b976"
+                android:text="On"
+                android:textColor="@color/white"
+                android:textSize="12pt"></Button>
+
+            <Button
+                android:id="@+id/off5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75dp"
+                android:backgroundTint="#75ba95"
+                android:text="Off"
+                android:textColor="@color/white"
+                android:textSize="12pt"></Button>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="189dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="628dp"
+        android:background="@drawable/round_style"
+        android:backgroundTint="@color/grey"
+        android:onClick="previous"
+        android:text="@string/kembali"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UsingOnClickInXml" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
